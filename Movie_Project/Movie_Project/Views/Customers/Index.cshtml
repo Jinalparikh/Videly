@@ -1,0 +1,27 @@
+﻿@model IEnumerable<Movie_Project.Models.Customer>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Customer</h2>
+
+    <table class="table table-­‐bordered table-­‐hover">
+        <thead>
+            <tr>
+                <th>Customer</th>
+                <th>Membership Type</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.ActionLink(item.Name, "Details", "Customers", new { id = item.Id }, null)
+                    </td>
+                    <td>@item.MembershipType.Name</td>
+                </tr>
+            }
+        </tbody>
+    </table>

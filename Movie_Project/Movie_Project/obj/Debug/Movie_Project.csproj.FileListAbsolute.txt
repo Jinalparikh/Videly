@@ -106,3 +106,14 @@ F:\vidly\Videly\Movie_Project\Movie_Project\obj\Debug\Movie_Project.csproj.CoreC
 F:\vidly\Videly\Movie_Project\Movie_Project\obj\Debug\Movie_Project.csproj.CopyComplete
 F:\vidly\Videly\Movie_Project\Movie_Project\obj\Debug\Movie_Project.dll
 F:\vidly\Videly\Movie_Project\Movie_Project\obj\Debug\Movie_Project.pdb
+F:\vidly\Videly\Movie_Project\Movie_Project\obj\Debug\Movie_Project.Migrations.InitialModel.resources
+F:\vidly\Videly\Movie_Project\Movie_Project\obj\Debug\Movie_Project.csproj.GenerateResource.cache
+F:\vidly\Videly\Movie_Project\Movie_Project\obj\Debug\Movie_Project.Migrations.AddIsSubscribedToCustomer.resources
+F:\vidly\Videly\Movie_Project\Movie_Project\obj\Debug\Movie_Project.Migrations.AddMembershipType.resources
+F:\vidly\Videly\Movie_Project\Movie_Project\obj\Debug\Movie_Project.Migrations.PopulateMembershipTypes.resources
+F:\vidly\Videly\Movie_Project\Movie_Project\obj\Debug\Movie_Project.Migrations.ApplyAnnotationsToCustomerName.resources
+F:\vidly\Videly\Movie_Project\Movie_Project\obj\Debug\Movie_Project.Migrations.AddNameToMemberShipType.resources
+F:\vidly\Videly\Movie_Project\Movie_Project\obj\Debug\Movie_Project.Migrations.PopulateNameToMigration.resources
+F:\vidly\Videly\Movie_Project\Movie_Project\obj\Debug\Movie_Project.Migrations.AddBirthdateToCustomer.resources
+F:\vidly\Videly\Movie_Project\Movie_Project\obj\Debug\Movie_Project.Migrations.AddMovie.resources
+F:\vidly\Videly\Movie_Project\Movie_Project\obj\Debug\Movie_Project.Migrations.PopulateGenres.resources

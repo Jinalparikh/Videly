@@ -169,15 +169,61 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MoviesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202009151648330_InitialModel.cs" />
+    <Compile Include="Migrations\202009151648330_InitialModel.designer.cs">
+      <DependentUpon>202009151648330_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009151831002_AddIsSubscribedToCustomer.cs" />
+    <Compile Include="Migrations\202009151831002_AddIsSubscribedToCustomer.designer.cs">
+      <DependentUpon>202009151831002_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009151836215_AddMembershipType.cs" />
+    <Compile Include="Migrations\202009151836215_AddMembershipType.designer.cs">
+      <DependentUpon>202009151836215_AddMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009151838552_PopulateMembershipTypes.cs" />
+    <Compile Include="Migrations\202009151838552_PopulateMembershipTypes.designer.cs">
+      <DependentUpon>202009151838552_PopulateMembershipTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009151845516_ApplyAnnotationsToCustomerName.cs" />
+    <Compile Include="Migrations\202009151845516_ApplyAnnotationsToCustomerName.designer.cs">
+      <DependentUpon>202009151845516_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009151918462_AddNameToMemberShipType.cs" />
+    <Compile Include="Migrations\202009151918462_AddNameToMemberShipType.designer.cs">
+      <DependentUpon>202009151918462_AddNameToMemberShipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009151920287_PopulateNameToMigration.cs" />
+    <Compile Include="Migrations\202009151920287_PopulateNameToMigration.designer.cs">
+      <DependentUpon>202009151920287_PopulateNameToMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009151936513_AddBirthdateToCustomer.cs" />
+    <Compile Include="Migrations\202009151936513_AddBirthdateToCustomer.designer.cs">
+      <DependentUpon>202009151936513_AddBirthdateToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009152007403_AddMovie.cs" />
+    <Compile Include="Migrations\202009152007403_AddMovie.designer.cs">
+      <DependentUpon>202009152007403_AddMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009152009291_PopulateGenres.cs" />
+    <Compile Include="Migrations\202009152009291_PopulateGenres.designer.cs">
+      <DependentUpon>202009152009291_PopulateGenres.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MembershipType.cs" />
+    <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -237,6 +283,10 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Customers\Index.cshtml" />
+    <Content Include="Views\Customers\Details.cshtml" />
+    <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -253,6 +303,38 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202009151648330_InitialModel.resx">
+      <DependentUpon>202009151648330_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009151831002_AddIsSubscribedToCustomer.resx">
+      <DependentUpon>202009151831002_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009151836215_AddMembershipType.resx">
+      <DependentUpon>202009151836215_AddMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009151838552_PopulateMembershipTypes.resx">
+      <DependentUpon>202009151838552_PopulateMembershipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009151845516_ApplyAnnotationsToCustomerName.resx">
+      <DependentUpon>202009151845516_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009151918462_AddNameToMemberShipType.resx">
+      <DependentUpon>202009151918462_AddNameToMemberShipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009151920287_PopulateNameToMigration.resx">
+      <DependentUpon>202009151920287_PopulateNameToMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009151936513_AddBirthdateToCustomer.resx">
+      <DependentUpon>202009151936513_AddBirthdateToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009152007403_AddMovie.resx">
+      <DependentUpon>202009152007403_AddMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009152009291_PopulateGenres.resx">
+      <DependentUpon>202009152009291_PopulateGenres.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
