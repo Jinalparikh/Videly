@@ -1,0 +1,34 @@
+﻿@model Movie_Project.ViewModel.CustomerFromViewModel
+@{
+    ViewBag.Title = "New";
+}
+
+<h2>New Customer</h2>
+
+@using (Html.BeginForm("Save", "Customers"))
+{
+    <div class="form-group">
+        @Html.LabelFor(c => c.customer.Name)
+        @Html.TextBoxFor(c => c.customer.Name, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(c => c.customer.MembershipTypeId)
+        @Html.DropDownListFor(c => c.customer.MembershipTypeId, new SelectList(Model.MembershipTypes,"Id","Name"),"Select MembershipType", new { @class = "form-control" })
+    </div>
+
+
+    <div class="form-group">
+        @Html.LabelFor(c => c.customer.BirthDate)
+        @Html.TextBoxFor(c => c.customer.BirthDate,"{0:d MMM yyyy}" ,new { @class = "form-control" })
+    </div>
+
+    <div class="checkbox">
+        <label>
+            @Html.CheckBoxFor(c => c.customer.IsSubscribedToNewsletter) Subscribed to Newsletter?
+        </label>
+    </div>
+
+    @Html.HiddenFor(c => c.customer.Id)
+    <button type="submit" class="btn btn-primary">Save</button>
+}
