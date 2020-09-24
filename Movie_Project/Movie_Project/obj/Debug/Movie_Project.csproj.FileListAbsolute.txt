@@ -117,3 +117,11 @@ F:\vidly\Videly\Movie_Project\Movie_Project\obj\Debug\Movie_Project.Migrations.P
 F:\vidly\Videly\Movie_Project\Movie_Project\obj\Debug\Movie_Project.Migrations.AddBirthdateToCustomer.resources
 F:\vidly\Videly\Movie_Project\Movie_Project\obj\Debug\Movie_Project.Migrations.AddMovie.resources
 F:\vidly\Videly\Movie_Project\Movie_Project\obj\Debug\Movie_Project.Migrations.PopulateGenres.resources
+F:\vidly\Videly\Movie_Project\Movie_Project\bin\System.Net.Http.Formatting.dll
+F:\vidly\Videly\Movie_Project\Movie_Project\bin\System.Web.Http.dll
+F:\vidly\Videly\Movie_Project\Movie_Project\bin\System.Web.Http.WebHost.dll
+F:\vidly\Videly\Movie_Project\Movie_Project\bin\System.Net.Http.Formatting.xml
+F:\vidly\Videly\Movie_Project\Movie_Project\bin\System.Web.Http.xml
+F:\vidly\Videly\Movie_Project\Movie_Project\bin\System.Web.Http.WebHost.xml
+F:\vidly\Videly\Movie_Project\Movie_Project\bin\AutoMapper.dll
+F:\vidly\Videly\Movie_Project\Movie_Project\bin\AutoMapper.xml
