@@ -21,6 +21,8 @@ namespace Movie_Project.Dtos
         [Range(1, 20)]
         public byte NumberInStock { get; set; }
 
+        public GenreDto Genre { get; set; }
+
         [Required]
         public byte GenreId { get; set; }
     }

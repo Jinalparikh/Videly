@@ -10,6 +10,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Web;
 using System.Web.Http;
+using System.Data.Entity;
 
 namespace Movie_Project.Controllers.Api
 {
@@ -26,7 +27,10 @@ namespace Movie_Project.Controllers.Api
         //GET /api/customers
         public IEnumerable<CustomerDto> GetCustomers()
         {
-            return _context.Customers.ToList().Select(Mapper.Map<Customer,CustomerDto>);
+            return _context.Customers
+                .Include(c => c.MembershipType)
+                .ToList()
+                .Select(Mapper.Map<Customer,CustomerDto>);
         }
 
         //GET /api/customers/1
@@ -68,7 +72,7 @@ namespace Movie_Project.Controllers.Api
                 throw new HttpResponseException(HttpStatusCode.NotFound);
 
             Mapper.Map(customerDto, customerInDb);
-          
+
             _context.SaveChanges();
 
             return Ok();

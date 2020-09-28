@@ -101,7 +101,6 @@ F:\vidly\Videly\Movie_Project\Movie_Project\bin\Microsoft.Owin.Security.Twitter.
 F:\vidly\Videly\Movie_Project\Movie_Project\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 F:\vidly\Videly\Movie_Project\Movie_Project\bin\Microsoft.Owin.Security.OAuth.xml
 F:\vidly\Videly\Movie_Project\Movie_Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-F:\vidly\Videly\Movie_Project\Movie_Project\obj\Debug\Movie_Project.csprojAssemblyReference.cache
 F:\vidly\Videly\Movie_Project\Movie_Project\obj\Debug\Movie_Project.csproj.CoreCompileInputs.cache
 F:\vidly\Videly\Movie_Project\Movie_Project\obj\Debug\Movie_Project.csproj.CopyComplete
 F:\vidly\Videly\Movie_Project\Movie_Project\obj\Debug\Movie_Project.dll
@@ -125,3 +124,4 @@ F:\vidly\Videly\Movie_Project\Movie_Project\bin\System.Web.Http.xml
 F:\vidly\Videly\Movie_Project\Movie_Project\bin\System.Web.Http.WebHost.xml
 F:\vidly\Videly\Movie_Project\Movie_Project\bin\AutoMapper.dll
 F:\vidly\Videly\Movie_Project\Movie_Project\bin\AutoMapper.xml
+F:\vidly\Videly\Movie_Project\Movie_Project\obj\Debug\Movie_Project.csprojAssemblyReference.cache
