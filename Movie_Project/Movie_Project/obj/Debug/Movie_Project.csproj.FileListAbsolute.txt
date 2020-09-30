@@ -125,3 +125,6 @@ F:\vidly\Videly\Movie_Project\Movie_Project\bin\System.Web.Http.WebHost.xml
 F:\vidly\Videly\Movie_Project\Movie_Project\bin\AutoMapper.dll
 F:\vidly\Videly\Movie_Project\Movie_Project\bin\AutoMapper.xml
 F:\vidly\Videly\Movie_Project\Movie_Project\obj\Debug\Movie_Project.csprojAssemblyReference.cache
+F:\vidly\Videly\Movie_Project\Movie_Project\obj\Debug\Movie_Project.Migrations.SeedUsers.resources
+F:\vidly\Videly\Movie_Project\Movie_Project\obj\Debug\Movie_Project.Migrations.AddDrivingLicenseToApplicationUser.resources
+F:\vidly\Videly\Movie_Project\Movie_Project\obj\Debug\Movie_Project.Migrations.AddPhoneNoToApplicationUser.resources
